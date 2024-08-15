@@ -1,0 +1,16 @@
+<table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Total Time in Month</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employeeData" [ngClass]="getRowClass(employee.totalTime)">
+        <td>{{ employee.employeeName }}</td>
+        <td>{{ employee.totalTime }} hrs</td>
+        <td><a href="#">Edit</a></td>
+      </tr>
+    </tbody>
+</table>

@@ -1,0 +1,51 @@
+/* Styles for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Header styling */
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  /* Row hover effect */
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Highlight rows with less than 100 hours */
+  .highlight {
+    background-color: #f8d7da; /* Light red color for highlighting */
+  }
+  
+  /* Styling for the Edit link */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Specific row border styling */
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Add spacing between rows */
+  tbody tr:not(:last-child) {
+    border-bottom: none;
+  }
