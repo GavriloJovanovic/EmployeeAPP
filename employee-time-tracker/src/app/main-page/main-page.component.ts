@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { TimeTrackerService } from '../services/time-tracker.service';
 import { Employee } from '../models/employee.model';
 
@@ -11,12 +11,16 @@ export class MainPageComponent implements OnInit {
 
   employeeData: any[] = [];
 
-  constructor(private timeTrackerService: TimeTrackerService) { }
+  constructor(private timeTrackerService: TimeTrackerService, private cdr: ChangeDetectorRef) { }
 
   ngOnInit(): void {
     this.timeTrackerService.getTimeEntries().subscribe(data => {
-      console.log("BEKOS: ", data)
+      console.log('Raw data from service:', data); // Log raw data
       this.employeeData = this.processData(data);
+      console.log('Processed employee data:', this.employeeData); // Log processed data
+
+      // Trigger change detection manually after data is ready
+      this.cdr.detectChanges();
     });
   }
 
@@ -51,8 +55,7 @@ export class MainPageComponent implements OnInit {
     });
     // Convert to array and sort by totalTime in descending order
     const sortedEmployees = Object.values(employeeMap).sort((a: any, b: any) => b.totalTime - a.totalTime);
-    console.log(sortedEmployees);
-    
+    console.log('Sorted employee data:', sortedEmployees); // Log sorted data
     return sortedEmployees;
   }
 }
