@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NIDQB2lDZ9FBiDqFI8SBRAlaFz7YkeKJw0P3IV8bw1O+IOE/GYHZU7K+QbqJtx8KMSNKZjI6kVvtbTJXSz6sbA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gavrilo Jovanovic\\Documents\\GitHub\\EmployeeAPP\\employee-csh-app\\employee-csh-app\\employee-csh-app.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gavrilo Jovanovic\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

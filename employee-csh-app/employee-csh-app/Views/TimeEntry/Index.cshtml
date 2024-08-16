@@ -1,0 +1,27 @@
+﻿@model List<TimeEntry>
+
+<h2>Employee time tracker</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Total Time in Month</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var entry in Model)
+        {
+            var rowClass = entry.TotalHoursWorked < 100 ? "bg-danger" : "";
+            <tr class="@rowClass">
+                <td>@entry.EmployeeName</td>
+                <td>@entry.TotalHoursWorked hrs</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    .bg-danger {
+        background-color: #f8d7da !important;
+    }
+</style>
