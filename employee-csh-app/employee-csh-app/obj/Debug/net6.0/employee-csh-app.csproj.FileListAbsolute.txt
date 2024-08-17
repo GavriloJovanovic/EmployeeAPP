@@ -31,3 +31,9 @@ C:\Users\Gavrilo Jovanovic\Documents\GitHub\EmployeeAPP\employee-csh-app\employe
 C:\Users\Gavrilo Jovanovic\Documents\GitHub\EmployeeAPP\employee-csh-app\employee-csh-app\obj\Debug\net6.0\employee-csh-app.pdb
 C:\Users\Gavrilo Jovanovic\Documents\GitHub\EmployeeAPP\employee-csh-app\employee-csh-app\obj\Debug\net6.0\employee-csh-app.genruntimeconfig.cache
 C:\Users\Gavrilo Jovanovic\Documents\GitHub\EmployeeAPP\employee-csh-app\employee-csh-app\obj\Debug\net6.0\ref\employee-csh-app.dll
+C:\Users\Gavrilo Jovanovic\Documents\GitHub\EmployeeAPP\employee-csh-app\employee-csh-app\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Gavrilo Jovanovic\Documents\GitHub\EmployeeAPP\employee-csh-app\employee-csh-app\bin\Debug\net6.0\SkiaSharp.dll
+C:\Users\Gavrilo Jovanovic\Documents\GitHub\EmployeeAPP\employee-csh-app\employee-csh-app\bin\Debug\net6.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Gavrilo Jovanovic\Documents\GitHub\EmployeeAPP\employee-csh-app\employee-csh-app\bin\Debug\net6.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Gavrilo Jovanovic\Documents\GitHub\EmployeeAPP\employee-csh-app\employee-csh-app\bin\Debug\net6.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Gavrilo Jovanovic\Documents\GitHub\EmployeeAPP\employee-csh-app\employee-csh-app\bin\Debug\net6.0\runtimes\win-x86\native\libSkiaSharp.dll

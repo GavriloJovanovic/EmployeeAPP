@@ -1,27 +1,40 @@
 ﻿@model List<TimeEntry>
 
 <h2>Employee time tracker</h2>
-<table class="table table-striped">
+<table class="table">
     <thead>
-        <tr>
+        <tr class="table-header">
             <th>Name</th>
             <th>Total Time in Month</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var entry in Model)
         {
-            var rowClass = entry.TotalHoursWorked < 100 ? "bg-danger" : "";
+            var rowClass = entry.TotalHoursWorked < 100 ? "bg-danger table-row-hover" : "table-row-hover";
             <tr class="@rowClass">
                 <td>@entry.EmployeeName</td>
                 <td>@entry.TotalHoursWorked hrs</td>
+                <td><a href="#">Edit</a></td>
             </tr>
         }
     </tbody>
 </table>
 
+<a href="@Url.Action("PieChart", "TimeEntry")" class="btn btn-primary">View Pie Chart</a>
+
 <style>
+    .table-header {
+        background-color: #f2f2f2; 
+        color: black; 
+    }
+
     .bg-danger {
         background-color: #f8d7da !important;
+    }
+
+    .table-row-hover:hover {
+        background-color: #e0e0e0 !important; 
     }
 </style>
